@@ -1,0 +1,225 @@
+body {
+    font-family: Arial, sans-serif;
+    color:#c0392b;
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2;
+
+   
+}
+
+/* Add this to your existing CSS */
+/* Add this CSS to your existing styles.css file */
+/* Modal */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1000; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 50%; /* Could be more or less, depending on screen size */
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    animation-name: modalopen;
+    animation-duration: 0.4s;
+}
+
+/* Modal Close Button */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Animation for Modal Opening */
+@keyframes modalopen {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+#container {
+    text-align: center;
+    margin-top: 50px;
+}
+#button-container {
+    margin-top: 20px;
+}
+button {
+    padding: 15px 20px; /* Reduced padding for smaller screens */
+    font-size: 14px;
+    cursor: pointer;
+    position: relative;
+    width: 150px;
+    border: none;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: 0.2s;
+    border-radius: 5px;
+    opacity: 0.8;
+    letter-spacing: 1px;
+    box-shadow: #c0392b 0px 7px 2px, #000 0px 8px 5px;
+}
+/* Add this CSS to your existing styles.css file */
+/* Add this CSS to your existing styles.css file */
+.swiper-container {
+    width: 100%;
+    height: 300px; /* Fixed height for the carousel */
+}
+
+.swiper-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain; /* Maintain aspect ratio and fit within the container */
+}
+
+
+#yes-button {
+    --bg: #f32a2a;
+    --text-color: #fff;
+    background: var(--bg);
+    color: var(--text-color);
+}
+
+#no-button {
+    --bg: #f32a2a;
+    --text-color: #fff;
+    background: var(--bg);
+    color: var(--text-color);
+}
+
+button:hover {
+    opacity: 1;
+}
+
+button:active {
+    top: 4px;
+    box-shadow: #c0392b 0px 3px 2px,#000 0px 3px 5px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    body{
+        font-size: 8px;
+    }
+    button {
+        padding: 15px 15px; /* Further reduced padding for smaller screens */
+        width: 150px; /* Decreased button width */
+    }
+    img{
+        width: 80%;
+    }
+}
+
+@media (max-width: 480px) {
+    button {
+        padding: 10px 12px; /* Further reduced padding for smaller screens */
+        width: 120px; /* Decreased button width */
+    }
+    img{
+        width: 70%;
+    }
+    body{
+        font-size: 8px;
+    }
+}
+html,body{height:100%}
+.bg_heart{position:relative;top:0;left:0;width:100%;height:100%;overflow:hidden}
+
+.heart{position:absolute;top:-50%;-webkit-transform:rotate(-45deg);-moz-transform:rotate(-45deg);-m-transform:rotate(-45deg);transform:rotate(-45deg)}
+.heart:before{position:absolute;top:-50%;left:0;display:block;content:"";width:100%;height:100%;background:inherit;border-radius:100%;}
+.heart:after{position:absolute;top:0;right:-50%;display:block;content:"";width:100%;height:100%;background:inherit;border-radius:100%;}
+
+@-webkit-keyframes love {
+  0%{top:110%}
+}
+@-moz-keyframes love {
+  0%{top:110%}
+}
+@-ms-keyframes love {
+  0%{top:110%}
+}
+@keyframes love {
+  0%{top:110%}
+}
+
+
+
+.modal {
+    display: none; 
+    position: fixed; 
+    z-index: 1; 
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgba(0,0,0,0.4); 
+   
+
+  }
+  
+  .modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; 
+    padding: 20px;
+    border: 1px solid #888;
+    width: 50%; 
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+  }
+  
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  /* Add this CSS to your existing styles.css file or within a <style> tag in your HTML file */
+
+.modal-content img {
+    max-width: 100%; /* Ensures the GIF doesn't exceed the width of its container */
+    height: auto; /* Allows the height to adjust proportionally based on the width */
+    display: block; /* Ensures proper rendering as a block element */
+    margin: 0 auto; /* Centers the GIF horizontally */
+  }
+  
+  /* Adjustments for smaller screens (e.g., mobile devices) */
+  @media only screen and (max-width: 600px) {
+    .modal-content img {
+      max-width: 80%; /* Decrease the maximum width for smaller screens */
+    }
+  }
+  
+  
